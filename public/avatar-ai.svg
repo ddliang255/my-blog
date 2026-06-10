@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="400" height="400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    <clipPath id="circleClip">
+      <circle cx="100" cy="100" r="100"/>
+    </clipPath>
+  </defs>
+  
+  <!-- 背景圆 -->
+  <circle cx="100" cy="100" r="100" fill="url(#bg)"/>
+  
+  <!-- 装饰圆环 -->
+  <circle cx="100" cy="100" r="95" fill="none" stroke="white" stroke-width="2" opacity="0.3"/>
+  <circle cx="100" cy="100" r="85" fill="none" stroke="white" stroke-width="1" opacity="0.2"/>
+  
+  <!-- 头发 (黑色短发) -->
+  <path d="M45,95 Q50,50 100,42 Q150,50 155,95 Q155,75 140,60 Q120,48 100,48 Q80,48 60,60 Q45,75 45,95Z" fill="#1a1a1a"/>
+  
+  <!-- 脸 -->
+  <ellipse cx="100" cy="115" rx="48" ry="55" fill="#f5d0b5"/>
+  
+  <!-- 眉毛 -->
+  <path d="M68,98 Q78,94 88,97" stroke="#333" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M112,97 Q122,94 132,98" stroke="#333" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  
+  <!-- 眼睛 -->
+  <ellipse cx="78" cy="110" rx="8" ry="6" fill="#fff"/>
+  <ellipse cx="122" cy="110" rx="8" ry="6" fill="#fff"/>
+  <circle cx="79" cy="111" r="4" fill="#2d1810"/>
+  <circle cx="123" cy="111" r="4" fill="#2d1810"/>
+  <circle cx="80" cy="109" r="1.5" fill="#fff"/>
+  <circle cx="124" cy="109" r="1.5" fill="#fff"/>
+  
+  <!-- 鼻子 -->
+  <path d="M100,118 L98,130 Q100,133 102,130 L100,118" fill="#e8c4a8" opacity="0.6"/>
+  
+  <!-- 嘴巴 (微笑) -->
+  <path d="M90,142 Q100,152 110,142" stroke="#c97878" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  
+  <!-- 耳朵 -->
+  <ellipse cx="52" cy="118" rx="7" ry="12" fill="#f0c4a0"/>
+  <ellipse cx="148" cy="118" rx="7" ry="12" fill="#f0c4a0"/>
+  
+  <!-- 比耶手势 (左侧) -->
+  <g transform="translate(20, 130) rotate(-15)">
+    <!-- 手掌 -->
+    <ellipse cx="15" cy="25" rx="14" ry="18" fill="#f5d0b5"/>
+    <!-- 食指 -->
+    <rect x="22" y="-8" width="7" height="28" rx="3.5" fill="#f5d0b5" transform="rotate(-30 25 10)"/>
+    <!-- 中指/比耶 -->
+    <rect x="30" y="-2" width="7" height="32" rx="3.5" fill="#f5d0b5" transform="rotate(10 33 15)"/>
+  </g>
+  
+  <!-- 衣服 (黑色卫衣) -->
+  <path d="M40,170 Q50,160 70,162 L70,200 L130,200 L130,162 Q150,160 160,170 L165,200 L35,200 Z" fill="#1a1a1a"/>
+  
+  <!-- 卫衣文字装饰 -->
+  <text x="100" y="188" font-size="10" fill="white" text-anchor="middle" font-family="Arial" font-weight="bold" opacity="0.7">COOL</text>
+  
+  <!-- 光泽效果 -->
+  <ellipse cx="70" cy="100" rx="20" ry="30" fill="white" opacity="0.08"/>
+</svg>

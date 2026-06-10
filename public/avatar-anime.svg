@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="400" height="400">
+  <defs>
+    <linearGradient id="skyBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a8edea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fed6e3;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="eyeGrad" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+      <stop offset="70%" style="stop-color:#4338ca;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#312e81;stop-opacity:1" />
+    </radialGradient>
+    <linearGradient id="hairGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1f2937;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#111827;stop-opacity:1" />
+    </linearGradient>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- 背景圆 -->
+  <circle cx="100" cy="100" r="100" fill="url(#skyBg)"/>
+
+  <!-- 装饰：樱花花瓣 -->
+  <ellipse cx="45" cy="35" rx="5" ry="7" fill="#ffb7c5" opacity="0.6" transform="rotate(-20 45 35)"/>
+  <ellipse cx="160" cy="50" rx="4" ry="6" fill="#ffc0cb" opacity="0.5" transform="rotate(30 160 50)"/>
+  <ellipse cx="170" cy="140" rx="4" ry="5" fill="#ffb7c5" opacity="0.4" transform="rotate(15 170 140)"/>
+  <ellipse cx="30" cy="150" rx="3" ry="5" fill="#ffd1dc" opacity="0.5" transform="rotate(-10 30 150)"/>
+
+  <!-- 头发 (后层 - 动漫蓬松感) -->
+  <path d="M38,90 
+           Q35,55 55,38 Q75,25 100,28 Q125,25 145,38 Q165,55 162,90
+           L158,85 Q155,58 138,45 Q120,34 100,36 Q80,34 62,45 Q45,58 42,85 Z" 
+        fill="url(#hairGrad)"/>
+  
+  <!-- 刘海 (动漫风格，遮住部分额头) -->
+  <path d="M48,88 
+           Q52,65 68,55 Q82,46 95,48 Q105,47 118,52 Q132,58 142,72 Q148,80 150,88
+           Q145,78 135,70 Q122,60 108,58 Q95,57 82,62 Q68,70 56,82 Q50,86 48,88Z" 
+        fill="#1f2937"/>
+  
+  <!-- 鬓角 -->
+  <path d="M42,92 Q38,110 40,130 Q42,145 48,155 L54,148 Q50,130 50,112 Q50,98 52,90Z" fill="#1f2937"/>
+  <path d="M158,92 Q162,110 160,130 Q158,145 152,155 L146,148 Q150,130 150,112 Q150,98 148,90Z" fill="#1f2937"/>
+
+  <!-- 脸 (动漫比例：大眼睛小鼻子) -->
+  <path d="M55,90 
+           Q52,115 58,140 Q65,162 85,172 Q100,177 115,172 Q135,162 142,140 Q148,115 145,90
+           Q140,75 125,70 Q110,66 100,67 Q90,66 75,70 Q60,75 55,90Z" 
+        fill="#fce7d6"/>
+
+  <!-- 腮红 (日系特征) -->
+  <ellipse cx="68" cy="128" rx="12" ry="7" fill="#ffb7b2" opacity="0.4"/>
+  <ellipse cx="132" cy="128" rx="12" ry="7" fill="#ffb7b2" opacity="0.4"/>
+
+  <!-- 眉毛 (细长动漫眉) -->
+  <path d="M66,96 Q76,91 88,94" stroke="#374151" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M112,94 Q124,91 134,96" stroke="#374151" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+  <!-- 眼睛 (大而明亮 - 动漫核心特征) -->
+  <!-- 左眼 -->
+  <ellipse cx="77" cy="112" rx="14" ry="16" fill="white"/>
+  <ellipse cx="78" cy="113" rx="11" ry="13" fill="url(#eyeGrad)"/>
+  <circle cx="75" cy="109" r="4" fill="white" opacity="0.9"/>
+  <circle cx="83" cy="116" r="2" fill="white" opacity="0.6"/>
+  <!-- 左眼高光 -->
+  <ellipse cx="74" cy="107" rx="3" ry="4" fill="white" opacity="0.9"/>
+  <!-- 上眼线 -->
+  <path d="M63,106 Q77,97 91,106" stroke="#1f2937" stroke-width="2" fill="none"/>
+  <!-- 下睫毛 -->
+  <path d="M64,124 Q70,127 77,126 Q84,125 90,123" stroke="#1f2937" stroke-width="1" fill="none" opacity="0.5"/>
+
+  <!-- 右眼 -->
+  <ellipse cx="123" cy="112" rx="14" ry="16" fill="white"/>
+  <ellipse cx="122" cy="113" rx="11" ry="13" fill="url(#eyeGrad)"/>
+  <circle cx="117" cy="109" r="4" fill="white" opacity="0.9"/>
+  <circle cx="127" cy="116" r="2" fill="white" opacity="0.6"/>
+  <!-- 右眼高光 -->
+  <ellipse cx="118" cy="107" rx="3" ry="4" fill="white" opacity="0.9"/>
+  <!-- 上眼线 -->
+  <path d="M109,106 Q123,97 137,106" stroke="#1f2937" stroke-width="2" fill="none"/>
+  <!-- 下睫毛 -->
+  <path d="M110,123 Q116,124 123,126 Q130,127 136,124" stroke="#1f2937" stroke-width="1" fill="none" opacity="0.5"/>
+
+  <!-- 鼻子 (极简 - 一条短线) -->
+  <path d="M100,124 L99,131" stroke="#d4a89a" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+
+  <!-- 嘴巴 (小巧微笑) -->
+  <path d="M93,144 Q100,150 107,144" stroke="#e57373" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+  <!-- 耳朵 -->
+  <path d="M53,114 Q48,114 48,122 Q48,133 54,136 Q56,132 56,124 Q56,117 53,114Z" fill="#f5d0b5"/>
+  <path d="M147,114 Q152,114 152,122 Q152,133 146,136 Q144,132 144,124 Q144,117 147,114Z" fill="#f5d0b5"/>
+
+  <!-- 衣服 (卫衣领口) -->
+  <path d="M60,168 Q70,162 85,165 L85,178 Q100,182 115,178 L115,165 Q130,162 140,168 L145,195 L55,195Z" fill="#1f2937"/>
+  <!-- 卫衣装饰线条 -->
+  <path d="M75,175 L85,173" stroke="white" stroke-width="1" opacity="0.3"/>
+  <text x="100" y="190" font-size="9" fill="white" text-anchor="middle" font-family="Arial" font-weight="bold" opacity="0.6">COOL</text>
+
+  <!-- 比耶手势 (左侧) -->
+  <g transform="translate(18, 135)">
+    <!-- 手臂/手掌 -->
+    <ellipse cx="12" cy="22" rx="10" ry="15" fill="#fce7d6" transform="rotate(-10 12 22)"/>
+    <!-- 食指 -->
+    <rect x="16" y="-5" width="6" height="24" rx="3" fill="#fce7d6" transform="rotate(-25 19 10)"/>
+    <!-- 中指(比耶) -->
+    <rect x="23" y="0" width="6" height="26" rx="3" fill="#fce7d6" transform="rotate(5 26 13)"/>
+    <!-- 手指高光 -->
+    <line x1="18" y1="2" x2="18" y2="18" stroke="white" stroke-width="1" opacity="0.3" transform="rotate(-25 19 10)"/>
+    <line x1="25" y1="5" x2="25" y2="20" stroke="white" stroke-width="1" opacity="0.3" transform="rotate(5 26 13)"/>
+  </g>
+
+  <!-- 光泽效果 -->
+  <ellipse cx="68" cy="95" rx="18" ry="25" fill="white" opacity="0.06"/>
+</svg>
